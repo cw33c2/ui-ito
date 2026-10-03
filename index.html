@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KŪHAKU Dental | 極致美學植牙中心</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Serif+TC:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="lang-zh">
+  
+  <!-- 全站 Loading 畫面 (audit-plan 防護) -->
+  <div id="global-loader" class="loader-overlay">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- 第一幕：文字鏤空透視 (Zoom-Through) -->
+  <section class="sec-zoom">
+    <div class="zoom-sticky">
+      <!-- 底層：頂級科技感診所照片 -->
+      <img class="zoom-img" src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1920&q=80" alt="KŪHAKU Clinic Space">
+      
+      <!-- 上層：利用 Multiply 混合模式打造的鏤空遮罩 -->
+      <div class="zoom-text-layer">
+        <!-- 巨大粗體字，做為透視窗口 -->
+        <h1 class="zoom-text">精準</h1>
+      </div>
+
+      <!-- 額外的副標題，在放大過程中漸漸淡出 -->
+      <div class="zoom-sub-layer">
+        <p class="hero-sub" data-key="hero_sub"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 第二幕：品牌理念 -->
+  <section class="sec-dark sec-philosophy">
+    <div class="philo-content">
+      <h2 data-key="ch2_title"></h2>
+      <p data-key="ch2_desc"></p>
+    </div>
+  </section>
+
+  <!-- 第三至第七幕：5 位名醫陣容 (橫向畫廊) -->
+  <section class="sec-doctors">
+    <div class="docs-container">
+      <!-- Panel 1: 院長 (單人獨享版面) -->
+      <div class="doc-panel panel-single">
+        <div class="doc-card">
+          <img class="doc-img" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80" alt="Doctor">
+          <div class="doc-info">
+            <h3 data-key="dr1_name"></h3>
+            <h4 data-key="dr1_title"></h4>
+            <p data-key="dr1_desc"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 2: 兩位醫師 (雙人並列) -->
+      <div class="doc-panel panel-double">
+        <div class="doc-card">
+          <img class="doc-img" src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80" alt="Doctor">
+          <div class="doc-info">
+            <h3 data-key="dr2_name"></h3>
+            <h4 data-key="dr2_title"></h4>
+            <p data-key="dr2_desc"></p>
+          </div>
+        </div>
+        <div class="doc-card">
+          <img class="doc-img" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&q=80" alt="Doctor">
+          <div class="doc-info">
+            <h3 data-key="dr3_name"></h3>
+            <h4 data-key="dr3_title"></h4>
+            <p data-key="dr3_desc"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 3: 兩位醫師 (雙人並列) -->
+      <div class="doc-panel panel-double">
+        <div class="doc-card">
+          <img class="doc-img" src="https://images.unsplash.com/photo-1594824436998-dd1b483db462?auto=format&fit=crop&w=800&q=80" alt="Doctor">
+          <div class="doc-info">
+            <h3 data-key="dr4_name"></h3>
+            <h4 data-key="dr4_title"></h4>
+            <p data-key="dr4_desc"></p>
+          </div>
+        </div>
+        <div class="doc-card">
+          <img class="doc-img" src="https://images.unsplash.com/photo-1622902046580-2b47f47f5471?auto=format&fit=crop&w=800&q=80" alt="Doctor">
+          <div class="doc-info">
+            <h3 data-key="dr5_name"></h3>
+            <h4 data-key="dr5_title"></h4>
+            <p data-key="dr5_desc"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 治療事項 (極簡風琴折疊清單) -->
+  <section class="sec-dark sec-treatments">
+    <div class="trt-container">
+      <div class="trt-header">
+        <h2 data-key="trt_main_title"></h2>
+      </div>
+      <div class="accordion">
+        <div class="acc-item">
+          <div class="acc-title"><span class="acc-num">01</span> <h3 data-key="trt_1_title"></h3></div>
+          <div class="acc-content"><p data-key="trt_1_desc"></p></div>
+        </div>
+        <div class="acc-item">
+          <div class="acc-title"><span class="acc-num">02</span> <h3 data-key="trt_2_title"></h3></div>
+          <div class="acc-content"><p data-key="trt_2_desc"></p></div>
+        </div>
+        <div class="acc-item">
+          <div class="acc-title"><span class="acc-num">03</span> <h3 data-key="trt_3_title"></h3></div>
+          <div class="acc-content"><p data-key="trt_3_desc"></p></div>
+        </div>
+        <div class="acc-item">
+          <div class="acc-title"><span class="acc-num">04</span> <h3 data-key="trt_4_title"></h3></div>
+          <div class="acc-content"><p data-key="trt_4_desc"></p></div>
+        </div>
+        <div class="acc-item">
+          <div class="acc-title"><span class="acc-num">05</span> <h3 data-key="trt_5_title"></h3></div>
+          <div class="acc-content"><p data-key="trt_5_desc"></p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 微笑藝廊 (Mouse Trail Reveal) -->
+  <section class="sec-dark sec-gallery">
+    <div class="gallery-container">
+      <h2 data-key="gal_title"></h2>
+      <ul class="gal-list">
+        <li class="gal-item" data-image="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80"><span data-key="gal_1"></span></li>
+        <li class="gal-item" data-image="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80"><span data-key="gal_2"></span></li>
+        <li class="gal-item" data-image="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80"><span data-key="gal_3"></span></li>
+      </ul>
+    </div>
+    <!-- 游標跟隨的幽靈圖片容器 -->
+    <div id="gal-cursor-img" class="gal-cursor-img"></div>
+  </section>
+
+  <!-- 第八幕：門診排班表 (極簡磁吸光影) -->
+  <section class="sec-dark sec-schedule">
+    <div class="sch-container">
+      <div class="sch-title-area">
+        <h2 data-key="schedule_title"></h2>
+        <p data-key="schedule_sub"></p>
+      </div>
+      <div id="schedule-grid" class="schedule-grid"></div>
+    </div>
+  </section>
+
+  <!-- 第九、十幕：頂級設備與地圖引流 -->
+  <section class="sec-dark sec-footer">
+    <div class="footer-content">
+      <h2 data-key="tech_title"></h2>
+      <p data-key="tech_desc"></p>
+      
+      <div class="map-area">
+        <h3 data-key="map_title"></h3>
+        <p data-key="map_desc"></p>
+        <button class="cta-btn" data-key="cta_btn"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- GSAP & Lenis -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+  
+  <script type="module">
+    import { setContent, renderSchedule, initAccordion, initGallery } from './main.js';
+    import { initAnimations } from './animations.js';
+
+    let isAppLoaded = false;
+    function bootApp() {
+      if (isAppLoaded) return;
+      isAppLoaded = true;
+
+      setContent();
+      renderSchedule();
+      initAccordion();
+      initGallery();
+      initAnimations();
+
+      setTimeout(() => {
+        const loader = document.getElementById('global-loader');
+        if (loader) loader.classList.add('hidden');
+      }, 500);
+    }
+
+    // 正常載入
+    window.addEventListener('load', bootApp);
+
+    // audit-plan 防當機機制
+    setTimeout(() => {
+      if (!isAppLoaded) {
+        console.warn("[Audit-Plan] 強制啟動防白畫面");
+        bootApp();
+      }
+    }, 5000);
+  </script>
+</body>
+</html>
