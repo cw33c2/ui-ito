@@ -3,209 +3,532 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KŪHAKU Dental | 極致美學植牙中心</title>
-  <link rel="stylesheet" href="./style.css">
+  <title>Zenith Dental 禪美學牙醫診所 | SPA 級無痛美學口腔中心</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Noto Serif TC & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Serif+TC:wght@300;400;700&display=swap" rel="stylesheet">
-</head>
-<body class="lang-zh">
-  
-  <!-- 全站 Loading 畫面 (audit-plan 防護) -->
-  <div id="global-loader" class="loader-overlay">
-    <div class="spinner"></div>
-  </div>
-
-  <!-- 第一幕：文字鏤空透視 (Zoom-Through) -->
-  <section class="sec-zoom">
-    <div class="zoom-sticky">
-      <!-- 底層：頂級科技感診所照片 -->
-      <img class="zoom-img" src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1920&q=80" alt="KŪHAKU Clinic Space">
-      
-      <!-- 上層：利用 Multiply 混合模式打造的鏤空遮罩 -->
-      <div class="zoom-text-layer">
-        <!-- 巨大粗體字，做為透視窗口 -->
-        <h1 class="zoom-text">精準</h1>
-      </div>
-
-      <!-- 額外的副標題，在放大過程中漸漸淡出 -->
-      <div class="zoom-sub-layer">
-        <p class="hero-sub" data-key="hero_sub"></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 第二幕：品牌理念 -->
-  <section class="sec-dark sec-philosophy">
-    <div class="philo-content">
-      <h2 data-key="ch2_title"></h2>
-      <p data-key="ch2_desc"></p>
-    </div>
-  </section>
-
-  <!-- 第三至第七幕：5 位名醫陣容 (橫向畫廊) -->
-  <section class="sec-doctors">
-    <div class="docs-container">
-      <!-- Panel 1: 院長 (單人獨享版面) -->
-      <div class="doc-panel panel-single">
-        <div class="doc-card">
-          <img class="doc-img" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80" alt="Doctor">
-          <div class="doc-info">
-            <h3 data-key="dr1_name"></h3>
-            <h4 data-key="dr1_title"></h4>
-            <p data-key="dr1_desc"></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Panel 2: 兩位醫師 (雙人並列) -->
-      <div class="doc-panel panel-double">
-        <div class="doc-card">
-          <img class="doc-img" src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80" alt="Doctor">
-          <div class="doc-info">
-            <h3 data-key="dr2_name"></h3>
-            <h4 data-key="dr2_title"></h4>
-            <p data-key="dr2_desc"></p>
-          </div>
-        </div>
-        <div class="doc-card">
-          <img class="doc-img" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&q=80" alt="Doctor">
-          <div class="doc-info">
-            <h3 data-key="dr3_name"></h3>
-            <h4 data-key="dr3_title"></h4>
-            <p data-key="dr3_desc"></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Panel 3: 兩位醫師 (雙人並列) -->
-      <div class="doc-panel panel-double">
-        <div class="doc-card">
-          <img class="doc-img" src="https://images.unsplash.com/photo-1594824436998-dd1b483db462?auto=format&fit=crop&w=800&q=80" alt="Doctor">
-          <div class="doc-info">
-            <h3 data-key="dr4_name"></h3>
-            <h4 data-key="dr4_title"></h4>
-            <p data-key="dr4_desc"></p>
-          </div>
-        </div>
-        <div class="doc-card">
-          <img class="doc-img" src="https://images.unsplash.com/photo-1622902046580-2b47f47f5471?auto=format&fit=crop&w=800&q=80" alt="Doctor">
-          <div class="doc-info">
-            <h3 data-key="dr5_name"></h3>
-            <h4 data-key="dr5_title"></h4>
-            <p data-key="dr5_desc"></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 治療事項 (極簡風琴折疊清單) -->
-  <section class="sec-dark sec-treatments">
-    <div class="trt-container">
-      <div class="trt-header">
-        <h2 data-key="trt_main_title"></h2>
-      </div>
-      <div class="accordion">
-        <div class="acc-item">
-          <div class="acc-title"><span class="acc-num">01</span> <h3 data-key="trt_1_title"></h3></div>
-          <div class="acc-content"><p data-key="trt_1_desc"></p></div>
-        </div>
-        <div class="acc-item">
-          <div class="acc-title"><span class="acc-num">02</span> <h3 data-key="trt_2_title"></h3></div>
-          <div class="acc-content"><p data-key="trt_2_desc"></p></div>
-        </div>
-        <div class="acc-item">
-          <div class="acc-title"><span class="acc-num">03</span> <h3 data-key="trt_3_title"></h3></div>
-          <div class="acc-content"><p data-key="trt_3_desc"></p></div>
-        </div>
-        <div class="acc-item">
-          <div class="acc-title"><span class="acc-num">04</span> <h3 data-key="trt_4_title"></h3></div>
-          <div class="acc-content"><p data-key="trt_4_desc"></p></div>
-        </div>
-        <div class="acc-item">
-          <div class="acc-title"><span class="acc-num">05</span> <h3 data-key="trt_5_title"></h3></div>
-          <div class="acc-content"><p data-key="trt_5_desc"></p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 微笑藝廊 (Mouse Trail Reveal) -->
-  <section class="sec-dark sec-gallery">
-    <div class="gallery-container">
-      <h2 data-key="gal_title"></h2>
-      <ul class="gal-list">
-        <li class="gal-item" data-image="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80"><span data-key="gal_1"></span></li>
-        <li class="gal-item" data-image="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80"><span data-key="gal_2"></span></li>
-        <li class="gal-item" data-image="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80"><span data-key="gal_3"></span></li>
-      </ul>
-    </div>
-    <!-- 游標跟隨的幽靈圖片容器 -->
-    <div id="gal-cursor-img" class="gal-cursor-img"></div>
-  </section>
-
-  <!-- 第八幕：門診排班表 (極簡磁吸光影) -->
-  <section class="sec-dark sec-schedule">
-    <div class="sch-container">
-      <div class="sch-title-area">
-        <h2 data-key="schedule_title"></h2>
-        <p data-key="schedule_sub"></p>
-      </div>
-      <div id="schedule-grid" class="schedule-grid"></div>
-    </div>
-  </section>
-
-  <!-- 第九、十幕：頂級設備與地圖引流 -->
-  <section class="sec-dark sec-footer">
-    <div class="footer-content">
-      <h2 data-key="tech_title"></h2>
-      <p data-key="tech_desc"></p>
-      
-      <div class="map-area">
-        <h3 data-key="map_title"></h3>
-        <p data-key="map_desc"></p>
-        <button class="cta-btn" data-key="cta_btn"></button>
-      </div>
-    </div>
-  </section>
-
-  <!-- GSAP & Lenis -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- GSAP Animation Library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
-  
-  <script type="module">
-    import { setContent, renderSchedule, initAccordion, initGallery } from './main.js';
-    import { initAnimations } from './animations.js';
 
-    let isAppLoaded = false;
-    function bootApp() {
-      if (isAppLoaded) return;
-      isAppLoaded = true;
-
-      setContent();
-      renderSchedule();
-      initAccordion();
-      initGallery();
-      initAnimations();
-
-      setTimeout(() => {
-        const loader = document.getElementById('global-loader');
-        if (loader) loader.classList.add('hidden');
-      }, 500);
-    }
-
-    // 正常載入
-    window.addEventListener('load', bootApp);
-
-    // audit-plan 防當機機制
-    setTimeout(() => {
-      if (!isAppLoaded) {
-        console.warn("[Audit-Plan] 強制啟動防白畫面");
-        bootApp();
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            zen: {
+              bg: '#F7F5F0',       // 燕麥暖白背景
+              card: '#FFFFFF',     // 純白卡片
+              dark: '#2A2421',     // 沉靜木墨棕
+              sub: '#6E655F',      // 柔和副文字
+              accent: '#7A8B7B',   // 抹茶灰綠（主視覺色）
+              gold: '#C4A47C',     // 暖金強調色
+              light: '#EDE8E0'     // 淺邊框色
+            }
+          },
+          fontFamily: {
+            serif: ['"Noto Serif TC"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
       }
-    }, 5000);
+    }
+  </script>
+  <style>
+    body {
+      background-color: #F7F5F0;
+      color: #2A2421;
+      font-family: 'Noto Serif TC', serif;
+      overflow-x: hidden;
+    }
+    
+    /* Before / After Slider Style */
+    .ba-slider-container {
+      position: relative;
+      user-select: none;
+      overflow: hidden;
+      border-radius: 1.5rem;
+    }
+    .ba-image-before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 50%;
+      overflow: hidden;
+    }
+    .ba-image-before img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      max-width: none;
+    }
+    .ba-handle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 4px;
+      background-color: #FFFFFF;
+      transform: translateX(-50%);
+      cursor: ew-resize;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    .ba-handle-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #FFFFFF;
+      border: 2px solid #7A8B7B;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #2A2421;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- 頂部導覽列 Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-zen-bg/90 backdrop-blur-md border-b border-zen-light transition-all duration-300 py-4 px-6 md:px-12 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="w-8 h-8 rounded-full bg-zen-accent/20 border border-zen-accent flex items-center justify-center text-zen-accent font-sans font-bold">
+        Z
+      </div>
+      <span class="text-xl font-bold tracking-widest text-zen-dark font-serif">ZENITH <span class="text-xs tracking-normal font-sans font-normal text-zen-sub">禪美學牙醫</span></span>
+    </div>
+
+    <!-- 導覽連結 -->
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-zen-dark">
+      <a href="#about" class="hover:text-zen-accent transition-colors">診所理念</a>
+      <a href="#treatments" class="hover:text-zen-accent transition-colors">SPA 級療程</a>
+      <a href="#gallery" class="hover:text-zen-accent transition-colors">前後對比藝廊</a>
+      <a href="#team" class="hover:text-zen-accent transition-colors">醫師團隊</a>
+      <a href="#booking" class="hover:text-zen-accent transition-colors">線上掛號</a>
+    </div>
+
+    <!-- CTA 按鈕 -->
+    <a href="#booking" class="bg-zen-dark hover:bg-zen-accent text-white px-5 py-2.5 rounded-full text-xs font-sans tracking-wider transition-all duration-300 shadow-md">
+      預約尊榮看診
+    </a>
+  </nav>
+
+  <!-- 第一幕：Hero 主視覺 Section -->
+  <section class="min-h-screen pt-28 pb-16 px-6 md:px-12 flex flex-col justify-center relative overflow-hidden">
+    <div class="max-w-7xl mx-auto w-full grid md:grid-cols-12 gap-12 items-center">
+      
+      <!-- 左側文案 -->
+      <div class="md:col-span-7 space-y-6 z-10 hero-text">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zen-accent/10 border border-zen-accent/30 text-zen-accent text-xs font-sans">
+          <span>🌿 日系靜謐 Zen Spa 口腔美學體驗</span>
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight text-zen-dark tracking-wide font-serif">
+          褪去恐懼的冰冷<br/>
+          重塑<span class="text-zen-accent italic">自然溫潤</span>的微笑美學
+        </h1>
+        <p class="text-zen-sub text-base md:text-lg max-w-xl leading-relaxed font-sans">
+          在 Zenith Dental，看診是一場心靈與美學的療癒旅程。我們引進日系微創無痛技術與靜音微風儀器，搭配放鬆草本香氛，讓牙齒矯正與美白如同享受精油 SPA。
+        </p>
+        <div class="pt-4 flex flex-wrap items-center gap-4 font-sans">
+          <a href="#booking" class="bg-zen-accent hover:bg-zen-dark text-white px-8 py-3.5 rounded-full text-sm font-semibold tracking-wider transition-all duration-300 shadow-lg shadow-zen-accent/20">
+            即刻預約無痛評估
+          </a>
+          <a href="#gallery" class="border border-zen-dark/30 hover:border-zen-dark text-zen-dark px-7 py-3.5 rounded-full text-sm font-medium transition-colors">
+            觀看真實對比案例 ↓
+          </a>
+        </div>
+        
+        <!-- 數據指標 -->
+        <div class="grid grid-cols-3 gap-6 pt-8 border-t border-zen-light/80 font-sans">
+          <div>
+            <div class="text-2xl md:text-3xl font-bold text-zen-dark">99.4%</div>
+            <div class="text-xs text-zen-sub mt-1">顧客無痛滿意度</div>
+          </div>
+          <div>
+            <div class="text-2xl md:text-3xl font-bold text-zen-dark">12,000+</div>
+            <div class="text-xs text-zen-sub mt-1">美學全瓷貼片案例</div>
+          </div>
+          <div>
+            <div class="text-2xl md:text-3xl font-bold text-zen-dark">0.1mm</div>
+            <div class="text-xs text-zen-sub mt-1">日系微創精準度</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 右側形象圖與光效 -->
+      <div class="md:col-span-5 relative hero-image">
+        <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80" alt="Zenith Spa Dental Clinic" class="w-full h-[480px] object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-zen-dark/60 via-transparent to-transparent"></div>
+          <div class="absolute bottom-6 left-6 right-6 text-white font-sans">
+            <div class="text-xs tracking-widest text-zen-gold uppercase">Zenith Space</div>
+            <div class="text-lg font-bold">日系木質獨立私密看診套房</div>
+          </div>
+        </div>
+        <!-- 裝飾底色 -->
+        <div class="absolute -bottom-6 -right-6 w-full h-full rounded-3xl bg-zen-accent/15 -z-10"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 第二幕：診所理念 (About Zen Concept) -->
+  <section id="about" class="py-24 bg-white px-6 md:px-12 border-y border-zen-light">
+    <div class="max-w-5xl mx-auto text-center space-y-8">
+      <span class="text-xs font-sans tracking-widest text-zen-accent uppercase">Our Philosophy</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-zen-dark font-serif">
+        「告別金屬噪音，回歸身心平靜」
+      </h2>
+      <p class="text-zen-sub text-base md:text-lg leading-relaxed max-w-3xl mx-auto font-sans">
+        許多人延誤牙齒治療，並非因為昂貴，而是出於對未知疼痛與冰冷金屬聲的畏懼。Zenith 重新定義牙醫診所，引進日本 Waterlase 無痛水雷射與負離子香氛系統，讓每一次的張口看診，都是一場放鬆的洗禮。
+      </p>
+
+      <!-- 3 大特色卡片 -->
+      <div class="grid md:grid-cols-3 gap-8 pt-12 text-left font-sans">
+        <div class="p-8 rounded-2xl bg-zen-bg border border-zen-light space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-zen-accent/15 text-zen-accent flex items-center justify-center text-xl font-bold">
+            🌿
+          </div>
+          <h3 class="text-lg font-bold text-zen-dark font-serif">靜音微風儀器</h3>
+          <p class="text-sm text-zen-sub leading-relaxed">
+            採用日本低噪音鑽牙馬達與震波水分子，音量降低 70%，大幅減緩緊張焦慮。
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-zen-bg border border-zen-light space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-zen-gold/15 text-zen-gold flex items-center justify-center text-xl font-bold">
+            ✨
+          </div>
+          <h3 class="text-lg font-bold text-zen-dark font-serif">獨立香氛診療套房</h3>
+          <p class="text-sm text-zen-sub leading-relaxed">
+            一對一獨立包廂設計，配有舒緩草本精油芳療與抗焦慮降噪耳機，隱私 100%。
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-zen-bg border border-zen-light space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-zen-accent/15 text-zen-accent flex items-center justify-center text-xl font-bold">
+            💎
+          </div>
+          <h3 class="text-lg font-bold text-zen-dark font-serif">DSD 數位微笑訂製</h3>
+          <p class="text-sm text-zen-sub leading-relaxed">
+            透過 3D 口腔掃描與大數據分析，在治療前即可預覽 100% 擬真的透光完美笑容。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 第三幕：前後對比滑塊藝廊 (Interactive Before / After Gallery) -->
+  <section id="gallery" class="py-24 px-6 md:px-12 bg-zen-bg">
+    <div class="max-w-6xl mx-auto space-y-12">
+      <div class="text-center space-y-4">
+        <span class="text-xs font-sans tracking-widest text-zen-accent uppercase">Real Transformations</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-zen-dark font-serif">親手親眼 感受微笑美學改變</h2>
+        <p class="text-zen-sub text-sm md:text-base font-sans">請左右拖曳中央滑塊，查看美學全瓷貼片與無痛矯正後的驚人對比效果。</p>
+      </div>
+
+      <!-- 互動滑塊組件 -->
+      <div class="max-w-4xl mx-auto bg-white p-6 md:p-8 rounded-3xl border border-zen-light shadow-xl space-y-6">
+        <div id="ba-slider" class="ba-slider-container h-[350px] md:h-[450px]">
+          <!-- After (底層: 完美微笑) -->
+          <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1200&q=80" alt="After Smile" class="w-full h-full object-cover" />
+          <div class="absolute bottom-4 right-4 bg-zen-dark/80 text-white text-xs font-sans px-3 py-1.5 rounded-full backdrop-blur-sm">
+            ✨ 治療後 (After)
+          </div>
+
+          <!-- Before (上層: 覆蓋層) -->
+          <div id="ba-before" class="ba-image-before">
+            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1200&q=80" alt="Before Smile" />
+            <div class="absolute bottom-4 left-4 bg-zen-sub/80 text-white text-xs font-sans px-3 py-1.5 rounded-full backdrop-blur-sm">
+              治療前 (Before)
+            </div>
+          </div>
+
+          <!-- Handle 控制條 -->
+          <div id="ba-handle" class="ba-handle">
+            <div class="ba-handle-button">
+              ‹ ›
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-between items-center text-xs font-sans text-zen-sub border-t border-zen-light pt-4 gap-4">
+          <div>
+            <span class="font-bold text-zen-dark">案例療程：</span> DSD 超薄全瓷微創貼片 (8顆)
+          </div>
+          <div>
+            <span class="font-bold text-zen-dark">主治醫師：</span> Dr. 櫻井 雅人 院長
+          </div>
+          <div>
+            <span class="font-bold text-zen-dark">治療週期：</span> 僅需 2 次看診
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 第四幕：SPA 級 4 大特色療程 (Treatments) -->
+  <section id="treatments" class="py-24 bg-white px-6 md:px-12 border-t border-zen-light">
+    <div class="max-w-6xl mx-auto space-y-12">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div class="space-y-3">
+          <span class="text-xs font-sans tracking-widest text-zen-accent uppercase">Treatments</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-zen-dark font-serif">Zenith 4 大美學專科療程</h2>
+        </div>
+        <p class="text-zen-sub text-sm max-w-md font-sans">
+          由日本與瑞士進修碩博士名醫領軍，提供全程微創無痛的頂級客製化診療。
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 font-sans">
+        
+        <!-- 療程 1 -->
+        <div class="p-8 rounded-3xl bg-zen-bg border border-zen-light hover:border-zen-accent transition-all duration-300 group space-y-4">
+          <div class="flex justify-between items-start">
+            <span class="text-xs font-bold text-zen-accent tracking-wider uppercase">01 / Aesthetics</span>
+            <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-zen-dark group-hover:bg-zen-accent group-hover:text-white transition-colors">
+              ➔
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-zen-dark font-serif">DSD 日系超薄全瓷美學貼片</h3>
+          <p class="text-sm text-zen-sub leading-relaxed">
+            免磨牙或微修 0.2mm 齒質，修飾齒縫、黃牙與齒型不整。具備高透光擬真釉質感，終身不變色。
+          </p>
+        </div>
+
+        <!-- 療程 2 -->
+        <div class="p-8 rounded-3xl bg-zen-bg border border-zen-light hover:border-zen-accent transition-all duration-300 group space-y-4">
+          <div class="flex justify-between items-start">
+            <span class="text-xs font-bold text-zen-accent tracking-wider uppercase">02 / Orthodontics</span>
+            <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-zen-dark group-hover:bg-zen-accent group-hover:text-white transition-colors">
+              ➔
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-zen-dark font-serif">Invisalign 隱適美無感透明矯正</h3>
+          <p class="text-sm text-zen-sub leading-relaxed">
+            結合 3D 口腔大數據算力，客製透明隱形牙套。近乎無感隱形，配戴舒適不刮嘴，悄悄迎來自信微笑。
+          </p>
+        </div>
+
+        <!-- 療程 3 -->
+        <div class="p-8 rounded-3xl bg-zen-bg border border-zen-light hover:border-zen-accent transition-all duration-300 group space-y-4">
+          <div class="flex justify-between items-start">
+            <span class="text-xs font-bold text-zen-accent tracking-wider uppercase">03 / Implant</span>
+            <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-zen-dark group-hover:bg-zen-accent group-hover:text-white transition-colors">
+              ➔
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-zen-dark font-serif">3D 藍光導航微創植牙</h3>
+          <p class="text-sm text-zen-sub leading-relaxed">
+            告別傳統大傷口。透過藍光即時 3D 導航系統避開血管神經，微創傷口僅 0.2cm，術後隔天正常飲食。
+          </p>
+        </div>
+
+        <!-- 療程 4 -->
+        <div class="p-8 rounded-3xl bg-zen-bg border border-zen-light hover:border-zen-accent transition-all duration-300 group space-y-4">
+          <div class="flex justify-between items-start">
+            <span class="text-xs font-bold text-zen-accent tracking-wider uppercase">04 / Spa Dental</span>
+            <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-zen-dark group-hover:bg-zen-accent group-hover:text-white transition-colors">
+              ➔
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-zen-dark font-serif">Waterlase 水雷射無痛牙周護理</h3>
+          <p class="text-sm text-zen-sub leading-relaxed">
+            以流動水分子高頻震波取代傳統金屬洗牙，深度殺菌同時舒緩牙齦。給牙肉最溫柔的 SPA 滋養。
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 第五幕：日系名醫團隊 (Team) -->
+  <section id="team" class="py-24 px-6 md:px-12 bg-zen-bg">
+    <div class="max-w-6xl mx-auto space-y-12">
+      <div class="text-center space-y-4">
+        <span class="text-xs font-sans tracking-widest text-zen-accent uppercase">Medical Team</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-zen-dark font-serif">日系碩博士 專業醫療團隊</h2>
+        <p class="text-zen-sub text-sm font-sans">每位醫師均具備豐富國際發表經驗與嚴格的美學淬鍊。</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 font-sans">
+        
+        <!-- 醫師 1 -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-zen-light shadow-md space-y-4 p-6">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" alt="Dr. 櫻井 雅人" class="w-full h-64 object-cover rounded-2xl" />
+          <div class="space-y-2">
+            <div class="text-xs text-zen-gold font-bold">院長 / 醫療總監</div>
+            <h3 class="text-xl font-bold text-zen-dark font-serif">Dr. 櫻井 雅人</h3>
+            <p class="text-xs text-zen-sub leading-relaxed">
+              東京醫科齒科大學博士。瑞士 ITI 植牙學會院士，專精 3D 藍光導航植牙與全口重建。
+            </p>
+          </div>
+        </div>
+
+        <!-- 醫師 2 -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-zen-light shadow-md space-y-4 p-6">
+          <img src="https://images.unsplash.com/photo-1594824813572-c50d32f50bf8?auto=format&fit=crop&w=600&q=80" alt="Dr. 美島 靜香" class="w-full h-64 object-cover rounded-2xl" />
+          <div class="space-y-2">
+            <div class="text-xs text-zen-gold font-bold">全瓷美學專家</div>
+            <h3 class="text-xl font-bold text-zen-dark font-serif">Dr. 美島 靜香</h3>
+            <p class="text-xs text-zen-sub leading-relaxed">
+              DSD 數位微笑設計認證醫師。深耕微創全瓷貼片 10 年，為上千位名人打造自信笑容。
+            </p>
+          </div>
+        </div>
+
+        <!-- 醫師 3 -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-zen-light shadow-md space-y-4 p-6">
+          <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Dr. 高橋 健太" class="w-full h-64 object-cover rounded-2xl" />
+          <div class="space-y-2">
+            <div class="text-xs text-zen-gold font-bold">隱適美矯正權威</div>
+            <h3 class="text-xl font-bold text-zen-dark font-serif">Dr. 高橋 健太</h3>
+            <p class="text-xs text-zen-sub leading-relaxed">
+              Invisalign 鑽石級黑鑽認證醫師。專精隱形矯正與臉型比例微調，累積超高好評。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 第六幕：預約掛號與聯絡資訊 (Booking & Contact) -->
+  <section id="booking" class="py-24 bg-zen-dark text-white px-6 md:px-12 relative overflow-hidden">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-12 gap-12 items-center">
+      
+      <div class="md:col-span-6 space-y-6">
+        <span class="text-xs font-sans tracking-widest text-zen-gold uppercase">Exclusive Appointment</span>
+        <h2 class="text-3xl md:text-5xl font-bold font-serif leading-tight">
+          開啟您的<br/><span class="text-zen-gold italic">無痛美學看診</span>體驗
+        </h2>
+        <p class="text-gray-300 text-sm md:text-base leading-relaxed font-sans">
+          為了確保每位賓客享有最高品質的獨立看診空間與芳療護理，Zenith 採取全預約制。填寫表單後，尊榮專員將於 2 小時內與您聯繫確認。
+        </p>
+
+        <div class="space-y-4 font-sans text-sm text-gray-300 border-t border-white/10 pt-6">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-zen-gold">📍</span>
+            <span>台北市大安區仁愛路四段 88 號 2 樓 (捷運忠孝復興站 3 號出口)</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-zen-gold">📞</span>
+            <span>(02) 2778-9888（專屬貴賓預約專線）</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-zen-gold">🕒</span>
+            <span>週一至週六 10:00 - 20:30（週日預約例休）</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 表單卡片 -->
+      <div class="md:col-span-6 bg-white text-zen-dark p-8 rounded-3xl shadow-2xl font-sans space-y-4">
+        <h3 class="text-xl font-bold font-serif border-b border-zen-light pb-3">線上尊榮掛號評估</h3>
+        
+        <form onsubmit="event.preventDefault(); alert('預約成功！Zenith 貴賓客服專員將於 2 小時內與您聯繫！');" class="space-y-4 text-xs">
+          <div>
+            <label class="block font-bold mb-1">您的姓名 *</label>
+            <input type="text" required placeholder="例如：王小明" class="w-full bg-zen-bg border border-zen-light rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-zen-accent" />
+          </div>
+
+          <div>
+            <label class="block font-bold mb-1">聯絡電話 *</label>
+            <input type="tel" required placeholder="例如：0912-345-678" class="w-full bg-zen-bg border border-zen-light rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-zen-accent" />
+          </div>
+
+          <div>
+            <label class="block font-bold mb-1">預約諮詢項目 *</label>
+            <select class="w-full bg-zen-bg border border-zen-light rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-zen-accent">
+              <option>DSD 日系超薄全瓷貼片</option>
+              <option>Invisalign 隱適美無痛矯正</option>
+              <option>3D 藍光導航微創植牙</option>
+              <option>Waterlase 水雷射無痛牙周護理</option>
+              <option>全口口腔健康檢查與洗牙</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block font-bold mb-1">希望看診時段</label>
+            <select class="w-full bg-zen-bg border border-zen-light rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-zen-accent">
+              <option>早診 (10:00 - 13:00)</option>
+              <option>午診 (14:00 - 17:30)</option>
+              <option>晚診 (18:00 - 20:30)</option>
+            </select>
+          </div>
+
+          <button type="submit" class="w-full bg-zen-accent hover:bg-zen-dark text-white font-bold text-sm py-4 rounded-xl transition-colors duration-300 shadow-lg shadow-zen-accent/30 mt-2">
+            確認送出預約申請 ➔
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 頁尾 Footer -->
+  <footer class="bg-black text-gray-500 text-xs py-8 px-6 text-center font-sans border-t border-gray-800">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+      <div>
+        © 2026 Zenith Dental 禪美學牙醫診所. All rights reserved.
+      </div>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-white transition-colors">隱私權政策</a>
+        <a href="#" class="hover:text-white transition-colors">醫療廣告法規說明</a>
+        <a href="#" class="hover:text-white transition-colors">衛署醫器字第 109888 號</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 前後對比滑塊 JS 腳本 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = document.getElementById("ba-slider");
+      const beforeImg = document.getElementById("ba-before");
+      const handle = document.getElementById("ba-handle");
+      let isDragging = false;
+
+      const updateSlider = (x) => {
+        const rect = container.getBoundingClientRect();
+        let posX = x - rect.left;
+        if (posX < 0) posX = 0;
+        if (posX > rect.width) posX = rect.width;
+        
+        const percentage = (posX / rect.width) * 100;
+        beforeImg.style.width = percentage + "%";
+        handle.style.left = percentage + "%";
+      };
+
+      const startDrag = (e) => {
+        isDragging = true;
+        updateSlider(e.pageX || e.touches[0].pageX);
+      };
+
+      const stopDrag = () => {
+        isDragging = false;
+      };
+
+      const onDrag = (e) => {
+        if (!isDragging) return;
+        updateSlider(e.pageX || e.touches[0].pageX);
+      };
+
+      container.addEventListener("mousedown", startDrag);
+      container.addEventListener("touchstart", startDrag);
+      window.addEventListener("mouseup", stopDrag);
+      window.addEventListener("touchend", stopDrag);
+      window.addEventListener("mousemove", onDrag);
+      window.addEventListener("touchmove", onDrag);
+    });
   </script>
 </body>
 </html>
